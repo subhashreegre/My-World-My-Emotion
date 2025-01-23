@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>My World : My Emotion</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="myart1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet" type="text/css">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+</style>
+
+
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<h1><u> My World : My Emotion </u></h1>
+				</div>
+			</div>
+		</nav>
+
+		<div id="bodywriting" class="body" style="color: #F5F5F5;">
+			 <strong>Welcome to the creative side of me!!!</strong><br>
+			 Art has always been my happy place — no matter the genre or medium, it’s where I find my calm and recharge my soul. I make it a point to dive into this therapeutic zone every day, exploring new techniques and challenging myself (because who needs formal classes when you’ve got passion, right?).<span><br>
+			 Here’s what I’m usually up to:<span><br>
+			 <b>✨ Sculpting with clay (it’s messy, but so worth it)</b><span><br>
+			 <b>✨ Drawing intricate mandalas (my kind of meditation)</b><span><br>
+			 <b>✨ Sketching coasters (because functional art is the best art)</b><span><br>
+		         Self-taught, self-driven, and always experimenting—that’s my art story.<span><br> <h2>Ready to join the vibe???</h2><span><br>
+
+		</div>
+		<br>
+    <br>
+
+		<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+
+  <style>
+        .equal-size {
+            width: 60%; /* Set the desired width */
+            aspect-ratio: 1600 / 1201; 
+            object-fit: cover; /* Ensures the image covers the entire area */
+        }
+   </style>
+
+  <div class="row mySlides fade">
+     <div class="numbertext d-flex justify-content-center">1 / 10</div>
+     <img src="img1.jpg" class="equal-size">
+     <div class="text">Santa & Snowman</div>
+  </div>
+ 
+  <div class="row mySlides fade">
+   <div class="numbertext d-flex justify-content-center">2 / 10</div>
+    <img src="img2.jpg" class="equal-size">
+    <div class="text">Light & Snow</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">3 / 10</div>
+    <img src="img3.jpg" class="equal-size">
+    <div class="text">Painted Peacock</div>
+  </div>
+  
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">4 / 10</div>
+    <img src="img4.jpg" class="equal-size">
+    <div class="text">DIY-Cookies</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">5 / 10</div>
+    <img src="img5.jpg" class="equal-size">
+    <div class="text">Light Lantern</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">6 / 10</div>
+    <img src="img6.jpg" class="equal-size">
+    <div class="text">Clay Rabbit</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">7 / 10</div>
+    <img src="img7.jpg" class="equal-size">
+    <div class="text">Clay Rabbit - Maginified Version</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">8 / 10</div>
+    <img src="img8.jpg" class="equal-size">
+    <div class="text">Rangeen Rangoli</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">9 / 10</div>
+    <img src="img9.jpg" class="equal-size">
+    <div class="text">Tulips</div>
+  </div>
+
+  <div class="row mySlides fade">
+    <div class="numbertext d-flex justify-content-center">10 / 10</div>
+    <img src="img10.jpg" class="equal-size">
+    <div class="text">Tulip Beauty</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2s seconds
+}
+</script>
+
+<br>
+<br>
+<div id="bodywriting" class="body" style="color: #F5F5F5;">
+			I’ve been on a clay-cation for the past 4 months, whipping up adorable creations like cute lil’ bunnies, a Santa Claus, and even a Saraswati sculpture (yes, I really did that).<br>
+			<b>Clay is my jam</b> — if I’m not sculpting, am I even living???<br>
+			Also, I have this thing where I see random stuff lying around, like plain coasters, and suddenly I need to paint them. It’s a vibe.<br>
+			<b>Fun fact:</b> I once DIY’d my friend Sreeja’s birthday with a clay masterpiece & taught myself the guitar, because <b>WHY NOT???</b><br>
+			Oh, and just wait — I am an avid gastronome, crafting delicious meals to hit those tastebuds!!!" <br>
+                        <h3>Pics coming soon. Stay tuned!!!</h3>
+			
+		</div>
+
+
+	
+
+<div class="container">
+    <div class="row3">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      	<div class="box">
+        
+        <p>
+              <img class="img-about" src="new1.jpg" alt="about me">
+              
+            </p>
+         <div class="write">Pizza Pleasure</div>
+       </div></div>
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      	<div class="box">
+        
+        <p>
+              <img class="img-about" src="new2.jpg" alt="crossover">
+              
+            </p>
+
+        <div class="write">Pizza - My heart's paradise</div>
+
+       </div></div>
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      	<div class="box">
+        
+        <p>
+              <img class="img-about" src="new3.jpg" alt="my art">
+              
+            </p>
+            <div class="write">Beautiful in Art</div>
+        
+         
+       </div></div>
+
+      </div>
+
+
+
+
+<div class="container">
+</div>
+<div class="row3">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="box">
+        
+        <p>
+              <img class="img-about" src="new4.jpg" alt="about me">
+              
+            </p>
+        <div class="write">Emotions in a Book</div>
+       </div></div>
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="box">
+        
+        <p>
+              <img class="img-about" src="new5.jpg" alt="crossover">
+              
+            </p>
+
+        <div class="write">Tradition in a Mask</div>
+
+       </div></div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="box">
+        
+        <p>
+              <img class="img-about" src="new6.jpg" alt="my art">
+              
+            </p>
+            <div class="write">Freshness in Yellow</div>
+        
+         
+       </div></div>
+     </div>
+
+
+<div class="container">
+</div>
+<div class="row3">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="box">
+        
+        <p>
+              <img class="img-about" src="new7.jpg" alt="about me">
+              
+            </p>
+            <div class="write">Floral world</div>
+        
+       </div></div>
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="box">
+        
+        <p>
+              <img class="img-about" src="new8.jpg" alt="crossover">
+              
+            </p>
+
+         <div class="write">Sunflower in Natural Canvas</div>
+       </div></div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="box">
+        
+        <p>
+              <img class="img-about" src="new9.jpg" alt="my art">
+              
+            </p>
+        <div class="write">Adding light to life</div>
+         
+       </div></div>
+     </div>
+      
+
+      
+
+</div>
+
+<br>
+<br>
+<div id="bodywriting" class="body" style="color: #F5F5F5;">
+     <b>Alright besties</b>, here’s where we call it a day!!!<br>
+     But don’t even think this is the end. I’ve got layers (like an onion, but cooler); and trust me, you’ve only seen the top one.<br>
+     Thanks for cruising through my artsy little corner of the universe!!!<br><span>
+     Oh, and the fun doesn’t stop here. Art is forever, and so is the vibe.<br>
+     <h3>Want more??</h3> Head over to my Instagram, where all the chaos, creativity, and late-night <b>"oops-I-made-this"</b> moments thrive.<br>
+     ✨ See you there: <a href="https://www.instagram.com/craftopiabloom/" class="fa fa-instagram"></a>
+    
+     <h3>This page may pause, but the glow-up continues. Stay iconic!!!</h3>
+
+</div>
+
+
+ 
+
+    <footer id="footer-id" class="panel-footer">
+    <div class="container1">
+      <div class="row9">
+       
+        <section id="address" class="col-sm-4">
+         
+         
+          <p><a href="myart1.html">~Let's go home</a></p>
+         
+        </section>
+       
+      </div>
+      <div class="text-right">&copy; Copyright Subhashree Roy</div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
